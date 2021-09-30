@@ -14,7 +14,7 @@ app.use(cors());
 app.use('/posts', bulletinRoutes);
 
 const CONNECTION_URL = 'mongodb+srv://titu:titu1234@cluster0.qghtm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
-const PORT = process.env.PORT|| 5000;
+const PORT = process.env.PORT|| 3000;
 
 mongoose.connect(CONNECTION_URL)
   .then(() => app.listen(PORT, () => console.log(`Base MongoDB conectad, servidor corriendo en el puerto: http://localhost:${PORT}`)))

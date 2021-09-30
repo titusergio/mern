@@ -9,6 +9,7 @@ export const getBulletins = async (req, res) => {
     try {
         const bulletins = await Bulletin.find();               
         res.status(200).json(bulletins);
+        
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
