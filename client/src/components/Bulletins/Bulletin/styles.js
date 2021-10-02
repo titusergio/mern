@@ -49,4 +49,54 @@ export default makeStyles({
     display: 'flex',
     justifyContent: 'space-between',
   },
+
+  tag: {
+    font: 'Arial',
+    background: '#588fe5',
+    display: 'inline-block',
+    color: '#fff',
+    position: 'relative',
+    padding: '10px',
+    borderTopLeftRadius: '4px',
+    borderBottomLeftRadius: '4px',
+    margin: '0 30px 0 0',
+    textDecoration: 'none',
+    '&:hover': {
+      backgroundColor: '#739fe4'
+    },
+    tagBefonore : {
+      background: '#fff',
+      width: '10px',
+      height: '10px',
+      content: "",
+      display: 'inline-block',
+      borderRadius: '20px',
+      margin: '0 5px 0 0',
+
+    },
+    tagAfter: {
+      display: 'inline-block',
+      border: '19px solid',
+      borderColor: 'transparent transparent transparent #588fe5',
+      height: 0,
+      width: 0,
+      position: 'absolute',
+      right: '-38px',
+      top: 0,
+      content: "",
+      display: 'inline-block',
+    }
+
+    
+},
+
+
+
+
+
+
+
+ 
+
+
 });

@@ -15,7 +15,7 @@ const App = () => {
     const [currentId, setCurrentId] = useState(0);
     const classes = useStyles();
     const dispatch = useDispatch();
-    
+
     useEffect(() => {
       dispatch(getPosts());
     }, [currentId, dispatch]);
@@ -23,7 +23,7 @@ const App = () => {
     return(
         <Container maxWidth="lg">
         <AppBar className={classes.appBar} position="static" color="inherit">
-          <Typography className={classes.heading} variant="h2" align="center">Bulletin dashboard</Typography>
+          <Typography className={classes.heading} variant="h2" align="center">Bulletin board</Typography>
           <img  className={classes.heading} src={classIm} alt="classIm" height="60"  />
         </AppBar>
         <Grow in>

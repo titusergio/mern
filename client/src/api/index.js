@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 
-const url = 'http://localhost:3000/posts';              //direccion del backend
+const url = 'http://localhost:4000/posts';              //direccion del backend
 
 
 export const fetchPosts = () => axios.get(url);
